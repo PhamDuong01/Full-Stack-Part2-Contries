@@ -23,7 +23,7 @@ function CountriesList(props) {
               <div key={country.name.official}>
                 <span>{country.name.common}</span>{" "}
                 <button data-value={index} onClick={handleShowCountry}>
-                  {showCountry == index ? "hide" : "show"}
+                  {showCountry === index.toString() ? "hide" : "show"}
                 </button>
                 {showCountry === index.toString() && <CountryInfo data={myCountry} />}
               </div>
